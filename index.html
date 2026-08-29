@@ -1,0 +1,2055 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#090909">
+
+    <title>
+        دعوتنامه عروسی ریحانه و دانیال
+    </title>
+
+
+    <!-- ================= FONT ================= -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+
+    <style>
+
+        /* =====================================================
+           RESET
+        ===================================================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+
+        body {
+
+            background: #080808;
+
+            color: #f5f1e8;
+
+            font-family:
+                "Vazirmatn",
+                sans-serif;
+
+            overflow-x: hidden;
+        }
+
+
+        /* =====================================================
+           GOLD VARIABLES
+        ===================================================== */
+
+        :root {
+
+            --gold: #d8b36a;
+
+            --light-gold: #f0d89b;
+
+            --dark-gold: #9b7538;
+
+            --black: #080808;
+
+            --soft-black: #111111;
+
+            --text: #e7e1d6;
+        }
+
+
+        /* =====================================================
+           GOLD PARTICLES
+        ===================================================== */
+
+        #particles {
+
+            position: fixed;
+
+            inset: 0;
+
+            width: 100%;
+            height: 100%;
+
+            pointer-events: none;
+
+            z-index: 5;
+        }
+
+
+        /* =====================================================
+           HERO
+        ===================================================== */
+
+        .hero {
+
+            position: relative;
+
+            height: 100vh;
+
+            min-height: 680px;
+
+            overflow: hidden;
+
+            display: flex;
+
+            align-items: flex-end;
+
+            justify-content: center;
+        }
+
+
+        .hero-image {
+
+            position: absolute;
+
+            inset: -8%;
+
+            width: 116%;
+
+            height: 116%;
+
+            object-fit: cover;
+
+            object-position: center;
+
+            filter:
+                brightness(0.62)
+                contrast(1.05);
+
+            transform:
+                scale(1.08);
+
+            transition:
+                transform 0.15s linear;
+        }
+
+
+        /* تاریکی روی عکس */
+
+        .hero::after {
+
+            content: "";
+
+            position: absolute;
+
+            inset: 0;
+
+            background:
+
+                linear-gradient(
+                    to bottom,
+                    rgba(0,0,0,0.1),
+                    rgba(0,0,0,0.15) 35%,
+                    rgba(0,0,0,0.85) 85%,
+                    #080808 100%
+                );
+
+            z-index: 1;
+        }
+
+
+        /* =====================================================
+           HERO TEXT
+        ===================================================== */
+
+        .hero-content {
+
+            position: relative;
+
+            z-index: 3;
+
+            text-align: center;
+
+            padding: 30px;
+
+            margin-bottom: 55px;
+
+            animation:
+                heroText 2s ease forwards;
+
+            opacity: 0;
+        }
+
+
+        @keyframes heroText {
+
+            from {
+
+                opacity: 0;
+
+                transform:
+                    translateY(35px);
+            }
+
+            to {
+
+                opacity: 1;
+
+                transform:
+                    translateY(0);
+            }
+        }
+
+
+        .invitation-label {
+
+            letter-spacing: 6px;
+
+            font-family:
+                "Cormorant Garamond",
+                serif;
+
+            font-size: 18px;
+
+            color:
+                var(--light-gold);
+
+            margin-bottom: 20px;
+        }
+
+
+        .names {
+
+            font-family:
+                "Cormorant Garamond",
+                serif;
+
+            font-size:
+                clamp(55px, 14vw, 120px);
+
+            line-height: 0.9;
+
+            font-weight: 500;
+
+            color:
+                #fff;
+
+            direction: ltr;
+
+            text-shadow:
+                0 5px 35px
+                rgba(0,0,0,0.8);
+        }
+
+
+        .ampersand {
+
+            font-family:
+                "Cormorant Garamond",
+                serif;
+
+            font-size: 42px;
+
+            color:
+                var(--gold);
+
+            margin: 14px 0;
+        }
+
+
+        .gold-line {
+
+            width: 90px;
+
+            height: 1px;
+
+            background:
+                linear-gradient(
+                    to right,
+                    transparent,
+                    var(--gold),
+                    transparent
+                );
+
+            margin:
+                28px auto;
+        }
+
+
+        .scroll-text {
+
+            font-size: 12px;
+
+            color:
+                rgba(255,255,255,0.7);
+
+            animation:
+                floating 2s infinite;
+        }
+
+
+        @keyframes floating {
+
+            0%,100% {
+                transform:
+                    translateY(0);
+            }
+
+            50% {
+                transform:
+                    translateY(8px);
+            }
+        }
+
+
+        /* =====================================================
+           GENERAL SECTIONS
+        ===================================================== */
+
+        .section {
+
+            width:
+                min(900px, 90%);
+
+            margin:
+                auto;
+
+            padding:
+                110px 0;
+
+            text-align:
+                center;
+
+            position:
+                relative;
+        }
+
+
+        .section-number {
+
+            font-family:
+                "Cormorant Garamond",
+                serif;
+
+            color:
+                var(--gold);
+
+            font-size:
+                16px;
+
+            letter-spacing:
+                4px;
+
+            margin-bottom:
+                12px;
+        }
+
+
+        .title {
+
+            font-family:
+                "Cormorant Garamond",
+                serif;
+
+            font-size:
+                clamp(34px, 8vw, 55px);
+
+            font-weight:
+                500;
+
+            color:
+                #fff;
+
+            margin-bottom:
+                20px;
+        }
+
+
+        .gold-divider {
+
+            width:
+                80px;
+
+            height:
+                1px;
+
+            margin:
+                25px auto 40px;
+
+            background:
+                var(--gold);
+        }
+
+
+        .text {
+
+            color:
+                var(--text);
+
+            font-size:
+                15px;
+
+            line-height:
+                2.5;
+
+            font-weight:
+                300;
+        }
+
+
+        /* =====================================================
+           DATE
+        ===================================================== */
+
+        .date-box {
+
+            margin-top:
+                55px;
+
+            padding:
+                40px 20px;
+
+            border-top:
+                1px solid
+                rgba(216,179,106,0.4);
+
+            border-bottom:
+                1px solid
+                rgba(216,179,106,0.4);
+        }
+
+
+        .date {
+
+            font-family:
+                "Cormorant Garamond",
+                serif;
+
+            font-size:
+                clamp(38px, 10vw, 65px);
+
+            color:
+                var(--light-gold);
+
+            direction:
+                ltr;
+
+            margin-bottom:
+                15px;
+        }
+
+
+        /* =====================================================
+           COUNTDOWN
+        ===================================================== */
+
+        .countdown {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            gap:
+                15px;
+
+            margin-top:
+                55px;
+        }
+
+
+        .count-box {
+
+            padding:
+                25px 10px;
+
+            border:
+                1px solid
+                rgba(216,179,106,0.25);
+
+            background:
+                rgba(255,255,255,0.025);
+
+            border-radius:
+                5px;
+        }
+
+
+        .count-number {
+
+            font-family:
+                "Cormorant Garamond",
+                serif;
+
+            font-size:
+                42px;
+
+            color:
+                var(--light-gold);
+        }
+
+
+        .count-label {
+
+            color:
+                #aaa;
+
+            font-size:
+                12px;
+
+            margin-top:
+                5px;
+        }
+
+
+        /* =====================================================
+           EVENT INFO
+        ===================================================== */
+
+        .info-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(2,1fr);
+
+            gap:
+                18px;
+
+            margin-top:
+                50px;
+        }
+
+
+        .info {
+
+            padding:
+                35px 20px;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(255,255,255,0.04),
+                    rgba(255,255,255,0.015)
+                );
+
+            border:
+                1px solid
+                rgba(216,179,106,0.15);
+
+            border-radius:
+                10px;
+
+            transition:
+                0.4s;
+        }
+
+
+        .info:hover {
+
+            transform:
+                translateY(-6px);
+
+            border-color:
+                rgba(216,179,106,0.5);
+        }
+
+
+        .info-icon {
+
+            font-size:
+                27px;
+
+            margin-bottom:
+                15px;
+        }
+
+
+        .info h3 {
+
+            font-family:
+                "Cormorant Garamond",
+                serif;
+
+            font-size:
+                25px;
+
+            color:
+                var(--light-gold);
+
+            margin-bottom:
+                10px;
+        }
+
+
+        .info p {
+
+            font-size:
+                14px;
+
+            color:
+                #d0cbc1;
+
+            line-height:
+                2;
+        }
+
+
+        /* =====================================================
+           MAP BUTTON
+        ===================================================== */
+
+        .map-button {
+
+            display:
+                inline-block;
+
+            margin-top:
+                35px;
+
+            padding:
+                15px 35px;
+
+            color:
+                #080808;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #b88b43,
+                    #f1d99d,
+                    #b88b43
+                );
+
+            text-decoration:
+                none;
+
+            border-radius:
+                4px;
+
+            font-weight:
+                600;
+
+            transition:
+                0.3s;
+
+            box-shadow:
+                0 8px 30px
+                rgba(216,179,106,0.15);
+        }
+
+
+        .map-button:hover {
+
+            transform:
+                translateY(-3px);
+
+            box-shadow:
+                0 12px 35px
+                rgba(216,179,106,0.3);
+        }
+
+
+        /* =====================================================
+           RULES
+        ===================================================== */
+
+        .rules {
+
+            text-align:
+                right;
+
+            margin-top:
+                45px;
+        }
+
+
+        .rule {
+
+            display:
+                flex;
+
+            gap:
+                18px;
+
+            padding:
+                23px 0;
+
+            border-bottom:
+                1px solid
+                rgba(255,255,255,0.08);
+        }
+
+
+        .rule-number {
+
+            flex-shrink:
+                0;
+
+            width:
+                40px;
+
+            height:
+                40px;
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                center;
+
+            border:
+                1px solid
+                var(--dark-gold);
+
+            border-radius:
+                50%;
+
+            color:
+                var(--light-gold);
+
+            font-family:
+                "Cormorant Garamond",
+                serif;
+
+            font-size:
+                20px;
+        }
+
+
+        .rule p {
+
+            color:
+                #ded8ce;
+
+            font-size:
+                14px;
+
+            line-height:
+                2.3;
+        }
+
+
+        .rule strong {
+
+            color:
+                var(--light-gold);
+        }
+
+
+        /* =====================================================
+           RSVP
+        ===================================================== */
+
+        .rsvp-box {
+
+            margin-top:
+                45px;
+
+            padding:
+                45px 25px;
+
+            border:
+                1px solid
+                rgba(216,179,106,0.25);
+
+            background:
+                rgba(255,255,255,0.025);
+        }
+
+
+        .rsvp-buttons {
+
+            display:
+                flex;
+
+            justify-content:
+                center;
+
+            gap:
+                15px;
+
+            flex-wrap:
+                wrap;
+
+            margin-top:
+                30px;
+        }
+
+
+        .rsvp {
+
+            text-decoration:
+                none;
+
+            padding:
+                14px 30px;
+
+            border:
+                1px solid
+                var(--dark-gold);
+
+            color:
+                var(--light-gold);
+
+            border-radius:
+                4px;
+
+            transition:
+                0.3s;
+        }
+
+
+        .rsvp:hover {
+
+            background:
+                var(--gold);
+
+            color:
+                #080808;
+        }
+
+
+        /* =====================================================
+           FOOTER
+        ===================================================== */
+
+        footer {
+
+            padding:
+                120px 20px;
+
+            text-align:
+                center;
+
+            background:
+                #040404;
+        }
+
+
+        .footer-names {
+
+            font-family:
+                "Cormorant Garamond",
+                serif;
+
+            direction:
+                ltr;
+
+            font-size:
+                clamp(40px, 10vw, 70px);
+
+            color:
+                var(--light-gold);
+        }
+
+
+        .heart {
+
+            font-size:
+                30px;
+
+            color:
+                var(--gold);
+
+            margin-bottom:
+                15px;
+        }
+
+
+        /* =====================================================
+           MUSIC BUTTON
+        ===================================================== */
+
+        .music-button {
+
+            position:
+                fixed;
+
+            left:
+                20px;
+
+            bottom:
+                20px;
+
+            width:
+                58px;
+
+            height:
+                58px;
+
+            border-radius:
+                50%;
+
+            border:
+                1px solid
+                rgba(216,179,106,0.5);
+
+            background:
+                rgba(10,10,10,0.85);
+
+            color:
+                var(--light-gold);
+
+            font-size:
+                21px;
+
+            cursor:
+                pointer;
+
+            z-index:
+                999;
+
+            backdrop-filter:
+                blur(10px);
+
+            transition:
+                0.3s;
+        }
+
+
+        .music-button:hover {
+
+            transform:
+                scale(1.1);
+        }
+
+
+        .music-playing {
+
+            animation:
+                rotateMusic 3s
+                linear infinite;
+        }
+
+
+        @keyframes rotateMusic {
+
+            from {
+                transform:
+                    rotate(0);
+            }
+
+            to {
+                transform:
+                    rotate(360deg);
+            }
+        }
+
+
+        /* =====================================================
+           SCROLL ANIMATION
+        ===================================================== */
+
+        .reveal {
+
+            opacity:
+                0;
+
+            transform:
+                translateY(40px);
+
+            transition:
+                opacity 1s ease,
+                transform 1s ease;
+        }
+
+
+        .reveal.show {
+
+            opacity:
+                1;
+
+            transform:
+                translateY(0);
+        }
+
+
+        /* =====================================================
+           MOBILE
+        ===================================================== */
+
+        @media (max-width: 650px) {
+
+            .hero {
+
+                min-height:
+                    700px;
+            }
+
+
+            .hero-content {
+
+                margin-bottom:
+                    45px;
+            }
+
+
+            .info-grid {
+
+                grid-template-columns:
+                    1fr;
+            }
+
+
+            .countdown {
+
+                gap:
+                    7px;
+            }
+
+
+            .count-box {
+
+                padding:
+                    18px 5px;
+            }
+
+
+            .count-number {
+
+                font-size:
+                    32px;
+            }
+
+
+            .rule {
+
+                gap:
+                    12px;
+            }
+
+
+            .section {
+
+                padding:
+                    80px 0;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- ==========================================================
+     PARTICLES
+========================================================== -->
+
+<canvas id="particles"></canvas>
+
+
+
+<!-- ==========================================================
+     HERO
+========================================================== -->
+
+<section class="hero">
+
+    <!-- عکس خودت و دانیال -->
+    <img
+        src="couple.jpg"
+        id="heroImage"
+        class="hero-image"
+        alt="ریحانه و دانیال"
+    >
+
+
+    <div class="hero-content">
+
+        <div class="invitation-label">
+            WEDDING INVITATION
+        </div>
+
+
+        <div class="names">
+            Reyhaneh
+        </div>
+
+
+        <div class="ampersand">
+            &
+        </div>
+
+
+        <div class="names">
+            Javad
+        </div>
+
+
+        <div class="gold-line"></div>
+
+
+        <div class="scroll-text">
+            ↓ برای دیدن دعوتنامه اسکرول کنید ↓
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================================
+     INTRODUCTION
+========================================================== -->
+
+<section class="section reveal">
+
+    <div class="section-number">
+        01
+    </div>
+
+
+    <h1 class="title">
+        به جشن عشق ما دعوتید
+    </h1>
+
+
+    <div class="gold-divider"></div>
+
+
+    <p class="text">
+
+        بعضی لحظه‌ها فقط یک‌بار در زندگی اتفاق می‌افتند؛
+
+        <br>
+
+        و ما تصمیم گرفته‌ایم یکی از زیباترین شب‌های
+        زندگی‌مان را در کنار عزیزترین آدم‌های زندگی‌مان
+        جشن بگیریم.
+
+        <br><br>
+
+        حضور شما در این شب برای ما
+        ارزشمندترین هدیه است. 🤍
+
+    </p>
+
+
+
+    <div class="date-box">
+
+        <div class="date">
+            27 · 06 · 1405
+        </div>
+
+        <p class="text">
+            شبی که قرار است آغاز فصل تازه‌ای از زندگی ما باشد
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================================
+     COUNTDOWN
+========================================================== -->
+
+<section class="section reveal">
+
+    <div class="section-number">
+        02
+    </div>
+
+
+    <h2 class="title">
+        تا شروع جشن ما
+    </h2>
+
+
+    <div class="gold-divider"></div>
+
+
+    <div class="countdown">
+
+        <div class="count-box">
+
+            <div
+                class="count-number"
+                id="days">
+                00
+            </div>
+
+            <div class="count-label">
+                روز
+            </div>
+
+        </div>
+
+
+        <div class="count-box">
+
+            <div
+                class="count-number"
+                id="hours">
+                00
+            </div>
+
+            <div class="count-label">
+                ساعت
+            </div>
+
+        </div>
+
+
+        <div class="count-box">
+
+            <div
+                class="count-number"
+                id="minutes">
+                00
+            </div>
+
+            <div class="count-label">
+                دقیقه
+            </div>
+
+        </div>
+
+
+        <div class="count-box">
+
+            <div
+                class="count-number"
+                id="seconds">
+                00
+            </div>
+
+            <div class="count-label">
+                ثانیه
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================================
+     EVENT DETAILS
+========================================================== -->
+
+<section class="section reveal">
+
+    <div class="section-number">
+        03
+    </div>
+
+
+    <h2 class="title">
+        جزئیات مراسم
+    </h2>
+
+
+    <div class="gold-divider"></div>
+
+
+    <div class="info-grid">
+
+
+        <div class="info">
+
+            <div class="info-icon">
+                📅
+            </div>
+
+            <h3>
+                تاریخ
+            </h3>
+
+            <p>
+                جمعه   
+                <br>
+                27 شهریور 1405
+            </p>
+
+        </div>
+
+
+
+        <div class="info">
+
+            <div class="info-icon">
+                ⏰
+            </div>
+
+            <h3>
+                 زمان شروع
+            </h3>
+
+            <p>
+                ساعت 20:00
+                <br>
+                تا پایان جشن
+            </p>
+
+        </div>
+
+
+
+        <div class="info">
+
+            <div class="info-icon">
+                📍
+            </div>
+
+            <h3>
+                مکان
+            </h3>
+
+            <p>
+
+                رستوران آبشار در باغ گلها مشهد
+
+                <br>
+
+                بلوار جمهوری،
+                نرسیده به پل غدیر
+
+            </p>
+
+
+            <a
+                class="map-button"
+                href="https://nshn.ir/45Qb1C3eeJdbjS"
+                target="_blank">
+
+                📍 مسیریابی تالار
+
+            </a>
+
+        </div>
+
+
+
+        <div class="info">
+
+            <div class="info-icon">
+                👗
+            </div>
+
+            <h3>
+              لباس مناسب هر سالن
+            </h3>
+
+            <p>
+                
+
+                <br>
+
+               تمام مراسمات موسیقی و جشن در یک سالن همگانی برای دوست داران رقص و پایکوبی برای خانم ها و اقایان مشترک برگزار میشود . <br> و همچنین دو فضای مجزای دیگر برای خانم ها و اقایان که تمایل دارند برای حفظ ارامش خود به دور از موسیقی باشند در نظر گرفته شده
+            </p>
+
+        </div>
+
+    </div>
+
+     <div class="info" style="margin-top: 20px;">
+
+            <div class="info-icon">
+                🏠
+            </div>
+
+            <h3>
+                خونه عروس
+            </h3>
+
+            <p>
+
+                ویدیو چیدمان خانه عروس و داماد
+
+            </p>
+
+
+            <a
+                class="map-button"
+                href="https://www.aparat.com/shorts/2010079307961327616"
+                target="_blank">
+
+                مشاهده ویدیو
+            </a>
+
+        </div>
+
+
+
+</section>
+
+
+
+<!-- ==========================================================
+     RULES
+========================================================== -->
+
+<section class="section reveal">
+
+    <div class="section-number">
+        04
+    </div>
+
+
+    <h2 class="title">
+        چند خواهش از شما
+    </h2>
+
+
+    <div class="gold-divider"></div>
+
+
+    <p class="text">
+
+        برای اینکه این شب برای همه ما
+        زیباتر و خاطره‌انگیزتر باشد،
+        چند خواهش کوچک از شما داریم:
+
+    </p>
+
+
+    <div class="rules">
+
+        <div class="rule">
+
+            <div class="rule-number">
+                1
+            </div>
+
+            <p>
+
+                مهم‌ترین قانون امشب:
+
+                <br>
+
+                <strong>
+                    زیاد بخندید، زیاد برقصید
+                    و اجازه بدهید خاطره بسازیم! ❤️
+                </strong>
+
+            </p>
+
+        </div>
+
+
+
+        <div class="rule">
+
+            <div class="rule-number">
+                2
+            </div>
+
+            <p>
+
+                پیشاپیش از شما متشکریم بابت اینکه از دلبندانتان مراقبت میکنید تا شب به یاد ماندنی برای ما رقم بزنید 🤍
+
+            </p>
+
+        </div>
+
+
+
+        <div class="rule">
+
+            <div class="rule-number">
+                3
+            </div>
+
+            <p>
+
+                لطفاً با
+                <strong>
+                    انرژی مثبت، لبخند و حال خوب
+                </strong>
+                تشریف بیاورید.
+
+            </p>
+
+        </div>
+
+
+
+        
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================================
+     RSVP
+========================================================== -->
+
+<section class="section reveal">
+
+    <div class="section-number">
+        05
+    </div>
+
+
+    <h2 class="title">
+        منتظر دیدار شما هستیم
+    </h2>
+
+
+    <div class="gold-divider"></div>
+
+
+    <div class="rsvp-box">
+
+        <p class="text">
+
+            اگر افتخار حضور شما عزیزان را نداریم لطفا چند روز قبل اطلاع دهید 🤍
+
+        </p>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================================
+     FOOTER
+========================================================== -->
+
+<footer>
+
+    <div class="heart">
+        ♥
+    </div>
+
+
+    <div class="footer-names">
+        Reyhaneh & javad
+    </div>
+
+
+    <div class="gold-line"></div>
+
+
+    <p class="text">
+
+        با عشق،
+        منتظر دیدار شما هستیم.
+
+        <br><br>
+
+        27 شهریور 1405
+
+    </p>
+    <br><br>
+    <p style="font-size: 1.3vh;color:#aaa;">
+        برنامه نویس : ریحانه خواجه یزدی
+    </p>
+
+</footer>
+
+
+
+<!-- ==========================================================
+     MUSIC
+========================================================== -->
+
+<audio
+    id="weddingMusic"
+    loop
+    preload="auto">
+
+    <source
+        src="music.mp3"
+        type="audio/mpeg">
+
+</audio>
+
+
+<button
+    id="musicButton"
+    class="music-button"
+    aria-label="موسیقی">
+
+    🔇
+
+</button>
+
+
+
+<script>
+
+/* ============================================================
+   MUSIC
+============================================================ */
+
+const music =
+    document.getElementById("weddingMusic");
+
+const musicButton =
+    document.getElementById("musicButton");
+
+let playing = false;
+
+
+function startMusic() {
+
+    music.play()
+        .then(() => {
+
+            playing = true;
+
+            musicButton.innerHTML = "🎵";
+
+            musicButton.classList.add(
+                "music-playing"
+            );
+
+        })
+        .catch(() => {
+
+            console.log(
+                "برای شروع موسیقی نیاز به لمس صفحه است."
+            );
+
+        });
+
+}
+
+
+function stopMusic() {
+
+    music.pause();
+
+    playing = false;
+
+    musicButton.innerHTML = "🔇";
+
+    musicButton.classList.remove(
+        "music-playing"
+    );
+
+}
+
+
+musicButton.addEventListener(
+    "click",
+    function(event) {
+
+        event.stopPropagation();
+
+        if (playing) {
+
+            stopMusic();
+
+        } else {
+
+            startMusic();
+
+        }
+
+    }
+);
+
+
+/*
+   اولین لمس صفحه
+   موسیقی را فعال می‌کند.
+*/
+
+document.addEventListener(
+    "click",
+    function firstTouch() {
+
+        if (!playing) {
+            startMusic();
+        }
+
+        document.removeEventListener(
+            "click",
+            firstTouch
+        );
+
+    },
+    { once: true }
+);
+
+
+
+/* ============================================================
+   PARALLAX IMAGE
+============================================================ */
+
+const heroImage =
+    document.getElementById("heroImage");
+
+
+window.addEventListener(
+    "scroll",
+    function() {
+
+        const scroll =
+            window.scrollY;
+
+        if (
+            scroll <
+            window.innerHeight
+        ) {
+
+            const move =
+                scroll * 0.18;
+
+            const scale =
+                1.08 +
+                scroll * 0.00012;
+
+            heroImage.style.transform =
+                `translateY(${move}px)
+                 scale(${scale})`;
+
+        }
+
+    }
+);
+
+
+
+/* ============================================================
+   REVEAL ANIMATION
+============================================================ */
+
+const revealElements =
+    document.querySelectorAll(".reveal");
+
+
+const observer =
+    new IntersectionObserver(
+        (entries) => {
+
+            entries.forEach(
+                entry => {
+
+                    if (
+                        entry.isIntersecting
+                    ) {
+
+                        entry.target.classList.add(
+                            "show"
+                        );
+
+                    }
+
+                }
+            );
+
+        },
+        {
+            threshold: 0.15
+        }
+    );
+
+
+revealElements.forEach(
+    element => {
+
+        observer.observe(
+            element
+        );
+
+    }
+);
+
+
+
+/* ============================================================
+   COUNTDOWN
+============================================================ */
+
+/*
+   تاریخ عروسی:
+   ۳۰ شهریور ۱۴۰۵
+
+   ساعت:
+   ۱۸:۰۰
+
+   اگر ساعت مراسم تغییر کرد،
+   عدد 18 را تغییر بده.
+*/
+
+const weddingDate =
+    new Date(
+        "2026-09-18T20:00:00"
+    ).getTime();
+
+
+function updateCountdown() {
+
+    const now =
+        new Date().getTime();
+
+    const distance =
+        weddingDate - now;
+
+
+    if (distance <= 0) {
+
+        document.getElementById("days")
+            .innerText = "00";
+
+        document.getElementById("hours")
+            .innerText = "00";
+
+        document.getElementById("minutes")
+            .innerText = "00";
+
+        document.getElementById("seconds")
+            .innerText = "00";
+
+        return;
+    }
+
+
+    const days =
+        Math.floor(
+            distance /
+            (1000 * 60 * 60 * 24)
+        );
+
+
+    const hours =
+        Math.floor(
+            (distance %
+            (1000 * 60 * 60 * 24))
+            /
+            (1000 * 60 * 60)
+        );
+
+
+    const minutes =
+        Math.floor(
+            (distance %
+            (1000 * 60 * 60))
+            /
+            (1000 * 60)
+        );
+
+
+    const seconds =
+        Math.floor(
+            (distance %
+            (1000 * 60))
+            /
+            1000
+        );
+
+
+    document.getElementById("days")
+        .innerText =
+        String(days).padStart(2,"0");
+
+
+    document.getElementById("hours")
+        .innerText =
+        String(hours).padStart(2,"0");
+
+
+    document.getElementById("minutes")
+        .innerText =
+        String(minutes).padStart(2,"0");
+
+
+    document.getElementById("seconds")
+        .innerText =
+        String(seconds).padStart(2,"0");
+
+}
+
+
+setInterval(
+    updateCountdown,
+    1000
+);
+
+updateCountdown();
+
+
+
+/* ============================================================
+   GOLD PARTICLES
+============================================================ */
+
+const canvas =
+    document.getElementById(
+        "particles"
+    );
+
+const ctx =
+    canvas.getContext("2d");
+
+
+let particles = [];
+
+
+function resizeCanvas() {
+
+    canvas.width =
+        window.innerWidth;
+
+    canvas.height =
+        window.innerHeight;
+
+}
+
+
+resizeCanvas();
+
+
+window.addEventListener(
+    "resize",
+    resizeCanvas
+);
+
+
+function createParticles() {
+
+    particles = [];
+
+    const amount =
+        window.innerWidth < 600
+            ? 35
+            : 70;
+
+
+    for (
+        let i = 0;
+        i < amount;
+        i++
+    ) {
+
+        particles.push({
+
+            x:
+                Math.random()
+                *
+                canvas.width,
+
+            y:
+                Math.random()
+                *
+                canvas.height,
+
+            size:
+                Math.random()
+                * 2
+                + 0.5,
+
+            speed:
+                Math.random()
+                * 0.5
+                + 0.15,
+
+            opacity:
+                Math.random()
+                * 0.6
+                + 0.1
+
+        });
+
+    }
+
+}
+
+
+createParticles();
+
+
+function animateParticles() {
+
+    ctx.clearRect(
+        0,
+        0,
+        canvas.width,
+        canvas.height
+    );
+
+
+    particles.forEach(
+        p => {
+
+            p.y -= p.speed;
+
+
+            if (p.y < -10) {
+
+                p.y =
+                    canvas.height
+                    + 10;
+
+            }
+
+
+            ctx.beginPath();
+
+
+            ctx.arc(
+                p.x,
+                p.y,
+                p.size,
+                0,
+                Math.PI * 2
+            );
+
+
+            ctx.fillStyle =
+                `rgba(
+                    216,
+                    179,
+                    106,
+                    ${p.opacity}
+                )`;
+
+
+            ctx.fill();
+
+        }
+    );
+
+
+    requestAnimationFrame(
+        animateParticles
+    );
+
+}
+
+
+animateParticles();
+
+</script>
+
+
+</body>
+
+</html>
