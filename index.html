@@ -1657,29 +1657,6 @@ musicButton.addEventListener(
 );
 
 
-/*
-   اولین لمس صفحه
-   موسیقی را فعال می‌کند.
-*/
-
-document.addEventListener(
-    "click",
-    function firstTouch() {
-
-        if (!playing) {
-            startMusic();
-        }
-
-        document.removeEventListener(
-            "click",
-            firstTouch
-        );
-
-    },
-    { once: true }
-);
-
-
 
 /* ============================================================
    PARALLAX IMAGE
